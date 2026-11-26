@@ -1,9 +1,7 @@
 pipeline {
-    agent {
-        label 'python'
-    }
-
-    stages {
+    agent any 
+       
+        stages {
         stage('Entorno') {
             steps {
                 sh 'python3 --version'
