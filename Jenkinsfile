@@ -1,7 +1,9 @@
 pipeline {
-    agent any 
-       
-        stages {
+    agent {
+        label 'python'
+    }
+
+    stages {
         stage('Entorno') {
             steps {
                 sh 'python3 --version'
@@ -12,7 +14,7 @@ pipeline {
 
         stage('Descarga') {
             steps {
-                git url: 'https://github.com/janethC08/Conversiones.git', branch: 'main'
+                git url: 'https://github.com/Janethc08/Jenkins-python.git', branch: 'main'
             }
         }
 
