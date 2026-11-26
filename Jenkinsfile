@@ -14,7 +14,7 @@ pipeline {
 
         stage('Descarga') {
             steps {
-                git url: 'https://github.com/darrsal/Jenkins-python.git', branch: 'main'
+                git url: 'https://github.com/janethC08/Conversiones.git', branch: 'main'
             }
         }
 
